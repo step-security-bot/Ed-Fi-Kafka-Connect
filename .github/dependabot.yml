@@ -10,3 +10,13 @@ updates:
     target-branch: main
     schedule:
       interval: monthly
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /kafka
+    schedule:
+      interval: daily
